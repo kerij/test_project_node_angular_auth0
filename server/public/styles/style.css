@@ -1,0 +1,16 @@
+var myApp = angular.module('myApp', ['ui.router']);
+
+myApp.config(['$stateProvider','$urlRouterProvider', function($stateProvider, $urlRouteProvider) {
+
+  $urlRouteProvider.otherwise('/home');
+
+  $stateProvider
+    .state('home', {
+      url: '/home',
+      templateUrl: '/views/home.html',
+      controller: "LoginController"
+    })
+
+
+
+}]);
