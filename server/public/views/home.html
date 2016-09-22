@@ -1,0 +1,13 @@
+<div class="jumbotron">
+  <h2 class="text-center"><img src="https://cdn.auth0.com/styleguide/1.0.0/img/badge.svg"></h2>
+  <h2 class="text-center">Home</h2>
+  Is authenticated: {{isAuthenticated}}
+  The scope: {{$scope}}
+  <div class="text-center" >
+    <p>You are not yet authenticated. <a href="#/login">Log in.</a></p>
+  </div>
+  <div class="text-center" >
+    <h2>Welcome, {{ profile.nickname }}</h2>
+    <img ng-src="{{ profile.picture }}">
+  </div>
+</div>
