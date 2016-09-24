@@ -15,7 +15,7 @@
 
     function login() {
       console.log('login called');
-      lock.show();
+      lock.show({connections: ['facebook']});
     }
 
     // Logging out just requires removing the user's

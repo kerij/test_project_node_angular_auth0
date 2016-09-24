@@ -36,11 +36,7 @@ myApp.config(['$stateProvider', '$urlRouterProvider', '$httpProvider', 'lockProv
       templateUrl: '/views/home.html',
       controller: 'homeController'
     })
-    .state('ping', {
-      url: '/ping',
-      templateUrl: '/views/ping.html',
-      controller: 'pingController'
-    })
+  
 
 
 
